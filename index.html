@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>자기소개 | 현장에서 코드로</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f1f5f9;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --ok: #34d399;
+      --no: #f87171;
+      --border: #475569;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Malgun Gothic", sans-serif;
+      background: linear-gradient(160deg, #0f172a, #1e1b4b);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.5rem;
+      font-weight: 700;
+    }
+    header h1 span {
+      color: var(--accent);
+    }
+    header p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1.2rem;
+      width: 100%;
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      margin: 0 0 0.9rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-weight: 700;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .badge.ok {
+      background: rgba(52, 211, 153, 0.18);
+      color: var(--ok);
+    }
+    .badge.no {
+      background: rgba(248, 113, 113, 0.18);
+      color: var(--no);
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .works li strong {
+      color: var(--accent);
+    }
+    .strengths li {
+      margin-bottom: 1rem;
+    }
+    .strengths li:last-child {
+      margin-bottom: 0;
+    }
+    .sar {
+      display: block;
+      margin-top: 0.25rem;
+    }
+    .sar-label {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .link {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .link:hover,
+    .link:focus {
+      text-decoration-thickness: 2px;
+    }
+    .link:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    .purpose {
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      font-size: 1.05rem;
+      margin: 0;
+    }
+    .interaction {
+      text-align: center;
+    }
+    .proof-btn {
+      background: var(--accent);
+      color: #0f172a;
+      border: none;
+      border-radius: 10px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .proof-btn:hover,
+    .proof-btn:focus {
+      filter: brightness(1.1);
+    }
+    .proof-btn:focus {
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+    .proof-text {
+      margin-top: 0.8rem;
+      color: var(--muted);
+      min-height: 1.5rem;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>현장에서 <span>코드로</span></h1>
+      <p>맡은 일은 반드시 완주합니다.</p>
+    </header>
+
+    <section class="card">
+      <h2>대상과 목적</h2>
+      <p class="purpose">
+        이 페이지의 대상은 <strong>채용 담당자</strong>이며, 목적은 <strong>"건설 현장에서 개발자로 전환 중인 실행력 있는 학습자"라는 점과 구체적인 학습 결과물을 한 문장으로 전달</strong>하기 위함입니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>공개 정보</h2>
+
+      <h3 style="font-size: 1rem; margin: 0 0 0.5rem; color: var(--accent); font-weight: 600;">관심 분야</h3>
+      <ul>
+        <li>파이썬 기초</li>
+        <li>웹 개발</li>
+        <li>컴퓨팅 사고</li>
+      </ul>
+
+      <h3 style="font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--accent); font-weight: 600;">현재 학습</h3>
+      <ul>
+        <li>파이썬 기초 과정(변수 · 조건 · 리스트 · 딕셔너리 · 함수 · 파일 처리)</li>
+      </ul>
+
+      <h3 style="font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--accent); font-weight: 600;">이전 경력</h3>
+      <ul>
+        <li>건설 현장 아시바 설치·해체·수정</li>
+      </ul>
+
+      <h3 style="font-size: 1rem; margin: 1rem 0 0.5rem; color: var(--accent); font-weight: 600;">취미</h3>
+      <ul>
+        <li>매일 학습 기록 남기기</li>
+        <li>AI 도구로 개념 검증하기</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>비공개 정보</h2>
+      <ul>
+        <li><span style="color: var(--accent); font-weight: 600;">집 주소:</span> 비공개</li>
+        <li><span style="color: var(--accent); font-weight: 600;">전화번호:</span> 비공개</li>
+        <li><span style="color: var(--accent); font-weight: 600;">학교 이름:</span> 비공개</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>강점과 경험</h2>
+      <ul class="strengths">
+        <li>
+          <strong>설명할 수 있어야 이해한 것으로 검증</strong>
+          <span class="sar"><span class="sar-label">상황(S):</span> 코드가 돌아가도 다음 날이면 개념이 휘발되는 문제가 있었습니다.</span>
+          <span class="sar"><span class="sar-label">행동(A):</span> 진도를 나가기 전에 <a class="link" href="#" target="_blank" rel="noopener noreferrer">멘토에게 개념을 말로 설명하는 방식</a>으로 검증 루틴을 만들었습니다.</span>
+          <span class="sar"><span class="sar-label">결과(R):</span> 한 챕터에 머물러 반복하는 대신, <strong>설명 가능한 단위로 개념을 쌓는 학습 습관</strong>을 확립했습니다.</span>
+        </li>
+        <li>
+          <strong>현장 경험에서 나온 문제 해결력</strong>
+          <span class="sar"><span class="sar-label">상황(S):</span> 아시바 설치·해체·수정 업무는 이론대로만 되지 않는 현장이었습니다.</span>
+          <span class="sar"><span class="sar-label">행동(A):</span> 상황에 맞춰 구조를 바꾸고, 안전과 효율을 동시에 고려하는 방식으로 작업했습니다.</span>
+          <span class="sar"><span class="sar-label">결과(R):</span> "책과 실제의 간극"을 견디는 힘을 길렀고, <strong>이를 코딩 학습의 디버깅·시행착오에 그대로 적용</strong>하고 있습니다.</span>
+        </li>
+        <li>
+          <strong>AI를 정답기가 아닌 검증 도구로 활용</strong>
+          <span class="sar"><span class="sar-label">상황(S):</span> AI에게 계속 물으면 스스로 사고하는 힘이 줄어들 위험이 있었습니다.</span>
+          <span class="sar"><span class="sar-label">행동(A):</span> 먼저 혼자 고민하고, 막히면 <a class="link" href="#" target="_blank" rel="noopener noreferrer">AI로 개념을 검증</a>하는 순서를 지켰습니다.</span>
+          <span class="sar"><span class="sar-label">결과(R):</span> AI 시대에 필요한 <strong>"이해 기반 학습"</strong> 태도를 스스로 정립했습니다.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card interaction">
+      <h2>학습 확인</h2>
+      <p>아래 버튼을 눌러 현재 학습 상태 요약을 확인할 수 있습니다.</p>
+      <button class="proof-btn" id="proofBtn" type="button">학습 요약 보기</button>
+      <div class="proof-text" id="proofText" aria-live="polite"></div>
+    </section>
+
+    <footer>
+      로그인 없이 누구나 열람 가능한 자기소개 페이지
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('proofBtn');
+    const text = document.getElementById('proofText');
+    btn.addEventListener('click', function () {
+      text.textContent = '파이썬 기초: 변수·조건·리스트·딕셔너리·함수 학습 중 / 학습 방식: 설명 검증 루틴 / 목표: 3개월 내 기초 마스터 후 취업';
+    });
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        btn.click();
+      }
+    });
+  </script>
+</body>
+</html>
